@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1097</width>
+    <width>1845</width>
     <height>615</height>
    </rect>
   </property>
@@ -92,6 +92,13 @@
          <string>Месяц</string>
         </property>
        </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="statButton">
+       <property name="text">
+        <string>Статистика</string>
+       </property>
       </widget>
      </item>
      <item>

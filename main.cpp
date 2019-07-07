@@ -143,6 +143,8 @@ mainView::mainView(QWidget *parent) : QWidget(parent), ui(new Ui::mainView)
         ui->tableView->horizontalHeader()->setSectionsMovable(true);
     // делаем минимальную ширину колонки нулевой - колонки можно скрывать
         ui->tableView->horizontalHeader()->setMinimumSectionSize( 0 );
+        ui->tableView->setColumnWidth(0, 60 );
+        ui->tableView->verticalHeader()->setSectionResizeMode( QHeaderView::ResizeToContents );
         ui->tableView->show();
 
         QImageReader reader("map.jpg");
@@ -176,6 +178,13 @@ mainView::~mainView()
     delete ui;
 }
 
+#include <QProcess>
+void mainView::on_statButton_pressed()
+{
+    QProcess *statProcess = new QProcess(this);
+        statProcess->startDetached("stat.exe");
+    delete statProcess;
+}
 
 int main(int argc, char *argv[])
 {

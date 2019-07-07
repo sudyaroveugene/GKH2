@@ -17,6 +17,9 @@ public:
     explicit mainView(QWidget *parent = nullptr);
     ~mainView();
 
+private slots:
+    void on_statButton_pressed();
+
 private:
     Ui::mainView *ui;
 
