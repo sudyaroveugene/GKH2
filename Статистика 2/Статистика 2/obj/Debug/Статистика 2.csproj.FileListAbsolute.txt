@@ -1,8 +1,0 @@
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\bin\Debug\Статистика 2.exe.config
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\bin\Debug\Статистика 2.exe
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\bin\Debug\Статистика 2.pdb
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Debug\Статистика 2.csprojResolveAssemblyReference.cache
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Debug\Статистика_2.MainForm.resources
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Debug\Статистика 2.csproj.GenerateResource.Cache
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Debug\Статистика 2.exe
-C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Debug\Статистика 2.pdb

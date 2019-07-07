@@ -1,0 +1,7 @@
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\bin\Release\Снимок района.PNG
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\bin\Release\Статистика 2.exe.config
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\bin\Release\Статистика 2.exe
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Release\Статистика 2.csprojResolveAssemblyReference.cache
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Release\Статистика_2.MainForm.resources
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Release\Статистика 2.csproj.GenerateResource.Cache
+C:\Users\Алексей\Documents\SharpDevelop Projects\Статистика 2\Статистика 2\obj\Release\Статистика 2.exe

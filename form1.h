@@ -19,6 +19,7 @@ public:
 
 private slots:
     void on_statButton_pressed();
+    void on_typeSelector_activated(const QString &arg1);
 
 private:
     Ui::mainView *ui;

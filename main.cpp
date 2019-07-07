@@ -67,6 +67,8 @@ QSqlDatabase db;
 
 static bool createConnection( QSqlQuery& query )
 {
+//    const QStringList problemTypes = { "Свет", "Вода", "Канализация", "Газ",
+//        "Отходы", "Cнег", "Гололед"  };
 //    QString Name;               // ФИО заявителя
 //    QString phone;              // телефон заявителя
 //    homeAddress persAddr;       // адрес заявителя
@@ -80,29 +82,29 @@ static bool createConnection( QSqlQuery& query )
     query.exec("create table problems (id int primary key, "
                "fio varchar(40), phone varchar(15), homeAddr varchar(50), problemType varchar(20), "
                "problemDesc varchar(50), problemAddr varchar(40), startTime varchar(20), finishTime varchar(20), feedback varchar(4))" );
-    query.exec("insert into problems values(1, 'Иванов А.С.', '8-123-259-1245', 'Демакова, 24, кв. 25', 'вода', 'прорыв водопровода',"
+    query.exec("insert into problems values(1, 'Иванов А.С.', '8-123-259-1245', 'Демакова, 24, кв. 25', 'Вода', 'прорыв водопровода',"
                "'Демакова, 32','12.07.2019 13-23', '', 'нет')  ");
-    query.exec("insert into problems values(2, 'Петров И.И.', '8-123-344-1245', 'Советская, 54, кв. 2', 'канализация', 'течь',"
+    query.exec("insert into problems values(2, 'Петров И.И.', '8-123-344-1245', 'Советская, 54, кв. 2', 'Канализация', 'течь',"
                "'Ленина, 32','12.07.2019 13-23', '', 'нет')  ");
-    query.exec("insert into problems values(3, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 77, кв. 78', 'электричество', 'нет света',"
+    query.exec("insert into problems values(3, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 77, кв. 78', 'Свет', 'нет света',"
                "'Ленина, 32','12.07.2019 13-23', '', 'нет')  ");
-    query.exec("insert into problems values(4, 'Светлов И.Б.', '8-923-259-5752', 'Выборная, 24, кв. 221', 'вода', 'нет холодной воды',"
+    query.exec("insert into problems values(4, 'Светлов И.Б.', '8-923-259-5752', 'Выборная, 24, кв. 221', 'Вода', 'нет холодной воды',"
                "'Выборная, 24','07.06.2019 11-23', '07.06.2019 14-30', 'да' ) ");
-    query.exec("insert into problems values(5, 'Кравченко И.Б.', '8-223-259-5535', 'Никитина, 36', 'электричество', 'нет света',"
+    query.exec("insert into problems values(5, 'Кравченко И.Б.', '8-223-259-5535', 'Никитина, 36', 'Свет', 'нет света',"
                "'Никитина, 36','12.06.2019 18-23', '12.06.2019 23-30', 'да' ) ");
-    query.exec("insert into problems values(6, 'Бабушкина А.Н.', '334-25-52', 'Большевистская, 152', 'вода', 'нет горячей воды',"
+    query.exec("insert into problems values(6, 'Бабушкина А.Н.', '334-25-52', 'Большевистская, 152', 'Вода', 'нет горячей воды',"
                "'Большевистская, 152','15.06.2019 10-12', '20.06.2019 14-30', 'да' )  ");
     query.exec("insert into problems values(7, 'Деточкин И.П.', '123-59-52', 'Вокзальная магистраль 3/1, 24', 'электричество', 'нет света',"
                "'Вокзальная магистраль 3/1, 15','22.06.2019 15-30', '22.06.2019 16-00', 'да' ) ");
-    query.exec("insert into problems values(8, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'электричество', 'нет света',"
+    query.exec("insert into problems values(8, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'Свет', 'нет света',"
                "'Ленина, 32','12.07.2019 13-23', '', 0)  ");
-    query.exec("insert into problems values(9, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'электричество', 'нет света',"
+    query.exec("insert into problems values(9, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'Свет', 'нет света',"
                "'Ленина, 32','12.07.2019 13-23', '', 0)  ");
-    query.exec("insert into problems values(10, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'электричество', 'нет света',"
+    query.exec("insert into problems values(10, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'Свет', 'нет света',"
                "'Ленина, 32','12.07.2019 13-23', '', 0)  ");
-    query.exec("insert into problems values(11, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'электричество', 'нет света',"
+    query.exec("insert into problems values(11, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'Свет', 'нет света',"
                "'Ленина, 32','12.07.2019 13-23', '', 0)  ");
-    query.exec("insert into problems values(12, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'электричество', 'нет света',"
+    query.exec("insert into problems values(12, 'Степанов А.Б.', '8-123-259-5752', 'Ленина, 24', 'Свет', 'нет света',"
                "'Ленина, 32','12.07.2019 13-23', '', 0)  ");
 
     return true;
@@ -184,6 +186,13 @@ void mainView::on_statButton_pressed()
     QProcess *statProcess = new QProcess(this);
         statProcess->startDetached("stat.exe");
     delete statProcess;
+}
+
+void mainView::on_typeSelector_activated(const QString &arg1)
+{
+    baseQuery->exec( " SELECT * from PROBLEMS where problemType='"+arg1+"'" );
+    QString aa = baseQuery->executedQuery();
+    model->select();
 }
 
 int main(int argc, char *argv[])
