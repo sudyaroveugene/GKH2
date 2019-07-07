@@ -190,9 +190,10 @@ void mainView::on_statButton_pressed()
 
 void mainView::on_typeSelector_activated(const QString &arg1)
 {
-    baseQuery->exec( " SELECT * from PROBLEMS where problemType='"+arg1+"'" );
+    baseQuery->exec( "select * from problems where problemType='"+arg1+"'" );
     QString aa = baseQuery->executedQuery();
     model->select();
+    ui->tableView->update();
 }
 
 int main(int argc, char *argv[])
